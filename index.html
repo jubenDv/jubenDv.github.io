@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juben's Porfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>Juben Azley</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<h1>Juben's Portfolio</h1>
+  <nav id="navbar">
+        <a href="#skill"><h3>Skills</h3></a>
+        <a href="#project"><h3>Projects</h3></a>
+        <a href="#contact"><h3>Contact</h3></a>
+      </nav>
+    <header>
+     <div class="inside-header">
+      <div class="header1" data-aos="fade-right">
+        <h1 class="gap">Hi</h1>
+        <h2 class="gap">I'm Juben</h2>
+        <p class="typewrite" data-period="2000" data-type='[ "Web dev.", "Coffee hater", "Hardcoded", "Miss u" ]'></p>
+      </div>
+      <div class="header1" data-aos="fade-left">
+        <img src="https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_5-1024.png" alt="photo" width="300px">
+      </div>
+    </div>
+    </header>
+    <section class="first-section" id="skill">
+      <div class="second" data-aos="fade-right">
+        <h1 class="typewrite" data-period="2000" data-type='[ "Are you a semicolon? Because my code doesn’t run without you.", "Are we in a loop? Because I can’t stop thinking about you.", "Are you HTML? Because you are the structure to my heart.", "Are you a compiler? Because you just made my heart execute." ]'></h1>
+      </div>
+      <div class="second1" data-aos="fade-left">
+    <div class="skill">
+      <div>
+      <div class="skill-name">HTML</div>
+    </div>
+        <div class="bar-container">
+          <div class="bar html-bar"></div>
+        </div>
+      </div>
 
-<h2>About Me</h2>
-<p>Passionate about expanding my knowledge in web design and backend development.</p>
+    <div class="skill">
+      <div>
+      <div class="skill-name">CSS</div>
+    </div>
+      <div class="bar-container">
+        <div class="bar css-bar"></div>
+      </div>
+    </div>
 
-<h2>My Skills</h2>
-<ul>
-    <li>HTML</li>
-    <li>PHP</li>
-    <li>MYSQL</li>
-</ul>
+    <div class="skill">
+      <div>
+      <div class="skill-name">JS</div>
+    </div>
+      <div class="bar-container">
+        <div class="bar js-bar"></div>
+      </div>
+    </div>
 
-<h2>My Projects</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-            <th>Year</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Chat Support System</td>
-            <td><i>
-                Currently developing a comprehensive<br> chat support system Designed for<br>real-time client interaction
-                Features include<br>ticket management, chatbot integration,<br>
-                and user-agent communication.</i>
-            </td>
-            <td>In progress</td>
-        </tr>
-    </tbody>
-</table>
+    <div class="skill">
+      <div>
+      <div class="skill-name">PHP</div>
+    </div>
+      <div class="bar-container">
+        <div class="bar php-bar"></div>
+      </div>
+    </div>
 
-<h2>My Photo</h2>
-<img src="https://www.dropbox.com/scl/fi/db44btcrzjakc9f6clkrh/image2.jpg?rlkey=sidke3qeqt2qxt6rkyt9g3mzg&st=zz49p56i&raw=1" alt="My Photo">
-
-<h2>Contact Me</h2>
-<form action="" method="GET">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required placeholder="Juben Azley"><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="jubenaz.so@outlook.com"><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" placeholder="Insert a text message"></textarea><br>
-
-    <input type="submit" value="Submit">
-</form>
-
-<h2>Links</h2>
-<p>Visit my <a href="https://www.facebook.com/jubenazley.gabuat">Facebook</a> for more info.</p>
+    <div class="skill">
+      <div>
+      <div class="skill-name">C++</div>
+    </div>
+      <div class="bar-container">
+        <div class="bar cpp-bar"></div>
+        </div>
+    </div>
+  </div>
+    </section>
+    <section class="second-section" id="project">
+      <h1 style="text-align: center;" data-aos="fade-down">Projects that I made (Reyal not Fa-ke)</h1>
+      <div class="list" data-aos="fade-up">
+        <ol>
+          <li>Technical Support Website</li>
+          <li>Attendance System</li>
+          <li>BSIT 2A Project Submission (Online)</li>
+        </ol>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <form action="#" method="GET">
+      <h3 data-aos="fade-right">Let's talk</h3>
+      <div class="form" data-aos="fade-left">
+      <input type="text" name="name" placeholder="Your name" class="form-input" required><br>
+      <input type="email" name="email" placeholder="Your email" class="form-input" required ><br>
+      <textarea name="message" placeholder="Your message" required></textarea>
+    </div>
+      <button type="submit" data-aos="fade-up">Submit</button>
+    </form>
+    </section>
+    <footer>
+        <div class="social-icons">
+      <a href="https://www.facebook.com/jubenazley.gabuat" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/jubenDv" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Manual Coded</p>
+    </footer>
 </body>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1500, 
+  offset: 200,   
+});
+</script>
+
 </html>

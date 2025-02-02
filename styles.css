@@ -1,0 +1,365 @@
+html {
+  background-color: #ccc;
+}
+body {
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+header {
+    background-color: #ccc;
+    height: 100vh;
+}
+nav {
+  padding: 1rem;
+  padding-top: 40px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  overflow: hidden;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+nav a:hover {
+  color: red;
+}
+.inside-header {
+  display: flex;
+  margin: 50px;
+  max-width: 100%;
+  justify-content: center;
+ gap: 30%;
+ height: 69vh;
+
+}
+.header1 {
+   font-size: 50px;
+  place-content: center;
+}
+.header1 img{
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+.header1 h2 {
+
+}
+.gap {
+  margin-bottom: -50px;
+  display: flex;
+  margin: auto;
+}
+.skill {
+    margin-bottom: 20px;
+    place-items: center;
+    display: flex
+;
+    /* place-items: center; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.second {
+  width: 50%;
+  place-items: center;
+  place-content: center;
+}
+.second h1 {
+  width: 50%;
+  text-align: right;
+}
+.second1 {
+  width: 50%;
+  place-content: center;
+}
+.second-top {
+
+}
+.skill-name {
+  margin-top: 14px;
+  margin-left: 20px;
+  position: absolute;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.bar-container {
+  background-color: #e0e0e0;
+  border-radius: 100px;
+  width: 60%;
+  max-width: 60%;
+  height: 50px;
+  overflow: hidden;
+}
+.bar {
+  height: 100%;
+  text-align: right;
+  padding-right: 5px;
+  color: white;
+  line-height: 20px;
+  border-radius: 100px;
+}
+.html-bar {
+  width: 0;
+  background-color: #333;
+  animation: increaseWidth1 3s ease-in-out forwards;
+}
+.css-bar {
+  width: 0;
+  background-color: #555;
+  animation: increaseWidth2 3s ease-in-out forwards;
+  animation-delay: 0.5s; /* Optional delay */
+}
+.js-bar {
+  width: 0;
+  background-color: #777;
+  color: black;
+  animation: increaseWidth3 3s ease-in-out forwards;
+  animation-delay: 1s; /* Optional delay */
+}
+.php-bar {
+  width: 0;
+  background-color: #999;
+  animation: increaseWidth4 3s ease-in-out forwards;
+  animation-delay: 1.5s; /* Optional delay */
+}
+.cpp-bar {
+  width: 0;
+  background-color: #bbb;
+  color: black;
+  animation: increaseWidth5 3s ease-in-out forwards;
+  animation-delay: 2s; /* Optional delay */
+}
+@keyframes increaseWidth1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes increaseWidth2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes increaseWidth3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes increaseWidth4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes increaseWidth5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+.first-section {
+  display: flex;
+  height: 100vh;
+}
+.second-section {
+  place-content: center;
+  padding-top: 20px;
+  height: 100vh;
+}
+.list {
+  display: grid;
+  justify-content: center;
+}
+.list ol li {
+  font-size: 30px;
+}
+.contact {
+  height: 100vh;
+  place-content:  center;
+  place-items:  center;
+}
+form input {
+
+    border-radius: 10px;
+    min-width: 340px;
+    padding: 22px 0 22px 11px;
+    border: none;
+    margin-bottom: 7px;
+}
+textarea {
+    padding: 22px 0 22px 11px;
+    border: none;
+    width: 738px;
+    max-width: 839px;
+    min-width: 100px;
+    border-radius: 10px;
+    height: 218px;
+    resize: none;
+}
+button {
+    color: #ccc;
+    background-color: #333;
+    border: none;
+    height: 62px;
+    width: 166px;
+    border-radius: 10px;
+}
+footer {
+    place-items: center;
+    place-content: center;
+    height: 20vh;
+    background-color: #bbb;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: #4caf50;
+      transform: scale(1.2);
+    }
+
+
+@media (max-width: 320px) {
+  /* Styles for small phones */
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+    .header1 h1, .header1 h2, .header p {
+      font-size: 38px;
+    }
+    nav {
+      display: none;
+    }
+    .header1 img {
+
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .second-section h1 {
+    font-size:  20px;
+  }
+  .list ol li {
+    font-size:  20px;
+  }
+  textarea {
+    width: 340px;
+}
+button {
+  width:  340px;
+}
+    .inside-header {
+    display: grid;
+
+}
+      .social-icons {
+        flex-wrap: wrap;
+      }
+    .header1 h1, .header1 h2, .header1 p {
+      font-size: 57px;
+    }
+    .header1 h2 {
+      margin-bottom: -52px;
+    }
+    .second, .second1 {
+      width: 100%;
+    }
+@media (max-width: 768px) {
+
+    .header1 img {
+        /* position: absolute; */
+        /* top: 56%; */
+        display: flex
+;
+        /* margin: auto; */
+        /* margin-bottom: 47%; */
+        align-content: space-between;
+        /* flex-wrap: nowrap; */
+        /* flex-direction: row-reverse; */
+        /* justify-content: flex-end; */
+        margin-top: -36%;
+    }
+    .list ol li {
+      font-size:  24px;
+    }
+    .project {
+      display: grid;
+    }
+}
+    .first-section {
+        display: grid
+;
+        justify-items: center;
+        align-items: center;
+    }
+}
+}
+
+/* Large devices (small laptops, 1024px and up) */
+@media (max-width: 1024px) {
+
+}
+
+/* Extra Large devices (desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  /* Styles for desktops */
+}
+
+/* Extra Extra Large devices (larger desktops, 1440px and up) */
+@media (max-width: 1440px) {
+  /* Styles for larger screens */
+}
+
+/* Ultra-Wide Screens (up to 1920px) */
+@media (max-width: 1920px) {
+  /* Styles for very wide screens */
+}
+
+/* Retina screens (high pixel density) */
+@media (min-resolution: 2dppx) {
+  /* Styles for high-resolution displays */
+}
+
+
+
+
+
